@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "minimum_chrome_version": "40.0",
+    "name": "__MSG_notifier__",
+    "short_name": "__MSG_notifier__",
+    "description": "Get notified about reminders from time to time while you are busy.",
+    "default_locale": "en",
+    "author": "Akshay Gundewar",
+    "offline_enabled": true,
+
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+
+    //"id" : "faibmplmoflcppbnlighognbignopgbh",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0CB00v+5u8O3m9zl1dzEez+g8MIEGnPirUT2vzwcHaFli5nsn8gQIUbBVgluFCE+i9HTHhC0fQesYl2aK4klBF5ucGkzbJs3oxq+4Lyc+S1dEXic3VWYohzZS2luXNKBogU6MA/6J4Zy21n5EeeRdgpHCOqVj8PgzNjybtdNKDAhrstvmQzP8te6Dez5WjdWuBt8ClQR/e3t+tsOGOxHq5bNXlN0JijrGS5McltBhYJEHUgqIR9kJzeSXClkWpCsFYvRrGp5SoajuwtCdrCsa8iFJX+hqz7wo4/gbFh6YnK22j/xLfn7I/4XJM2i7d80J4jlOt/WpruKa+K/cYtC5wIDAQAB",
+
+    "permissions": [
+        "identity",
+        "syncFileSystem",
+        "storage",
+        "notifications",
+        "alarms",
+        "background",
+        "contextMenus"
+    ],
+    "oauth2": {
+        "client_id": "512069884644-jrmq4kajd3io9ef2vg6t8o532anl7r13.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/drive"
+        ]
+    },
+    "app": {
+        "background": {
+            "scripts": ["js/jquery-1.11.3.min.js", "js/background.js"]
+        }
+    }
+}

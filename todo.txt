@@ -1,0 +1,22 @@
+permissions
+-------------
+alarm
+audio
+background
+geolocation -> google analytics
+identity -> for login
+storage and syncfilesystem
+unlimitedStorage
+offline
+
+login page: http://demo.geekslabs.com/materialize/v2.3/layout03/user-login.html
+
+
+
+https://console.developers.google.com/apis/credentials?project=notifier-2486&authuser=2
+client id
+512069884644-jrmq4kajd3io9ef2vg6t8o532anl7r13.apps.googleusercontent.com
+current state of the token cache on chrome://identity-internals.
+
+
+https://developer.chrome.com/apps/notifications
