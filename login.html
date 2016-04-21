@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifier</title>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Not<i>i</i>f<i>i</i>er</a>
+                <!-- <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a> 
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="about.html">About</a></li>
+                </ul> -->
+            </div>
+        </nav>
+    </div>
+    <div class="login-con">
+        <h2>OAuth on Google properties</h2>
+        <div class="flow">
+            <button id="signin">Sign in</button>
+            <button id="getxhr" disabled>Get personal data</button>
+            <button id="revoke" disabled>Revoke token</button>
+            <div id="user_info"></div>
+        </div>
+    </div>
+    <div class="log">
+        <textarea id="__sample_support_logarea" disabled></textarea>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/userIdentity.js"></script>
+</body>
+
+</html>
