@@ -17,6 +17,132 @@ body {
     overflow: visible;
 }
 
+#splashScreen {
+    background-color: #042D3C;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.splash-logo {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    max-height: 100%;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.splash-logo i {
+    display: inline;
+}
+
+.splash-logo i:first-child {
+    margin: 0px 6px 0 -3px;
+}
+
+.splash-logo i:last-child {
+    margin: 0 2px 0 -9px;
+}
+
+.cssload-thecube {
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    top: 64%;
+    left: 51%;
+    position: absolute;
+    transform: rotateZ(45deg);
+    -webkit-transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.cssload-thecube .cssload-cube {
+    position: relative;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+}
+
+.cssload-thecube .cssload-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.cssload-thecube .cssload-cube:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 160, 199);
+    animation: cssload-fold-thecube 2.76s infinite linear both;
+    -webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.cssload-thecube .cssload-c2 {
+    transform: scale(1.1) rotateZ(90deg);
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+}
+
+.cssload-thecube .cssload-c3 {
+    transform: scale(1.1) rotateZ(180deg);
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+}
+
+.cssload-thecube .cssload-c4 {
+    transform: scale(1.1) rotateZ(270deg);
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+}
+
+.cssload-thecube .cssload-c2:before {
+    animation-delay: 0.35s;
+    -webkit-animation-delay: 0.35s;
+}
+
+.cssload-thecube .cssload-c3:before {
+    animation-delay: 0.69s;
+    -webkit-animation-delay: 0.69s;
+}
+
+.cssload-thecube .cssload-c4:before {
+    animation-delay: 1.04s;
+    -webkit-animation-delay: 1.04s;
+}
+
+@keyframes cssload-fold-thecube {
+    0%,
+    10% {
+        transform: perspective(136px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: perspective(136px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: perspective(136px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
 #background {
     background: url('../img/back2.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -27,6 +153,13 @@ body {
     height: 100%;
     opacity: 0.8;
     filter: alpha(opacity=80);
+}
+
+.brand-logo {
+    margin: 0;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 }
 
 .brand-logo i {
@@ -57,6 +190,22 @@ nav .nav-wrapper {
 
 
 /* CARD CSS START */
+
+.firstNotifier {
+    text-align: center;
+    background-color: rgba(8, 62, 84, 0.74);
+    color: white;
+    position: relative;
+    width: 200px;
+    margin: 8px auto;
+    line-height: 36px;
+}
+
+.firstNotifier i {
+    margin: -4px 0 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .cards-con {
     margin: 5px auto;
@@ -132,6 +281,20 @@ nav .nav-wrapper {
 
 
 /* CARD CSS END */
+
+
+/* LOGIN PAGE START */
+
+.login-con {
+    position: relative;
+    width: 400px;
+    margin: 12px auto;
+    height: 400px;
+    background-color: white;
+}
+
+
+/* LOGIN PAGE END */
 
 
 /* ABOUT PAGE SPECIFIC START */
