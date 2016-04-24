@@ -199,9 +199,15 @@ nav .nav-wrapper {
     width: 200px;
     margin: 8px auto;
     line-height: 36px;
+    cursor: pointer;
 }
 
-.firstNotifier i {
+.firstNotifier a {
+    padding: 0px;
+    color: white;
+}
+
+.firstNotifier a i {
     margin: -4px 0 0 0;
     display: inline-block;
     vertical-align: middle;
@@ -257,11 +263,15 @@ nav .nav-wrapper {
     bottom: 0px;
     position: absolute;
     width: 96%;
-    margin: 0 5px;
+    margin: 0 5px 0 0px;
     border-top: 1px solid rgba(128, 128, 128, 0.15);
 }
 
-.action-buttons i {
+.action-buttons a {
+    float: right;
+}
+
+.action-buttons a i {
     font-size: 19px;
     color: #424242;
     opacity: 0.5;
@@ -269,8 +279,8 @@ nav .nav-wrapper {
     margin: 5px 0 0 8px;
 }
 
-.action-buttons i:first-child,
-.action-buttons i:last-child {
+.action-buttons a:first-child i,
+.action-buttons a:last-child i {
     font-size: 21px;
 }
 
@@ -281,6 +291,141 @@ nav .nav-wrapper {
 
 
 /* CARD CSS END */
+
+
+/* MODAL CSS START */
+
+.modal-title {
+    padding: 5px 31px;
+    background: #154356;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-content {
+    padding: 5px;
+}
+
+.modal {
+    max-height: 85%;
+}
+
+.modal.modal-fixed-footer {
+    height: 85%;
+    border-radius: 0px;
+}
+
+.modal-footer {
+    background: #154356 !important;
+    border-radius: 0px !important;
+    height: initial !important;
+    padding: 0px 6px !important;
+}
+
+.modal-footer a {
+    margin: 0px 0 !important;
+    color: white !important;
+    font-size: 14px;
+}
+
+.input-field {
+    margin-top: 0rem;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    margin: 0 0 11px 0;
+}
+
+textarea.materialize-textarea {
+    padding: 0.2rem 0;
+}
+
+.dropdown-content li {
+    min-height: 35px;
+    line-height: 1.5rem;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+    line-height: 11px;
+    padding: 12px 16px;
+}
+
+[type="radio"]:checked + label {
+    color: #343434;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.picker__list {
+    padding: 0;
+}
+
+.picker__list-item {
+    padding: 0.55em 0.85em;
+}
+
+.picker__list-item small {
+    float: right
+}
+
+.picker--time .picker__button--clear {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.picker {
+    font-size: 13px;
+    line-height: 1;
+}
+
+.picker__date-display {
+    padding-bottom: 6px;
+}
+
+.picker__weekday-display {
+    padding: 6px 10px;
+    margin-bottom: 5px;
+}
+
+.picker__month-display {
+    font-size: 1.6rem;
+}
+
+.picker__day-display {
+    font-size: 3rem;
+}
+
+.picker__year-display {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.picker__footer {
+    padding: 0px 10px;
+}
+
+.picker__footer button {
+    font-size: 1rem;
+}
+
+
+/* MODAL CSS END */
 
 
 /* LOGIN PAGE START */

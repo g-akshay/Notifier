@@ -62,10 +62,9 @@ chrome.syncFileSystem.requestFileSystem(function(fs) {
     }    
 })();*/
 
-/*chrome.notifications.create("a", {
+chrome.notifications.create("a", {
     "type": "basic",
     "iconUrl": "icons/48.png",
     "message": "Time to make the toast.",
     "title": "sdf"
 });
-*/

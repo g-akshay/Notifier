@@ -26,3 +26,14 @@ faibmplmoflcppbnlighognbignopgbh
 
 https://console.developers.google.com/apis/library?project=notifier-2486&authuser=2
 https://github.com/GoogleChrome/chrome-app-samples/tree/master/samples/identity
+
+--------
+form
+--------
+title
+body
+
+frequency -> 
+one time:  date-time 
+daily: times 
+more frequent: mins, hour, 4 hour 12 hour
