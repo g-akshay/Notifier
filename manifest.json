@@ -33,16 +33,16 @@
 
         "contextMenus"
     ],
-   /* "oauth2": {
-        "client_id": "512069884644-jrmq4kajd3io9ef2vg6t8o532anl7r13.apps.googleusercontent.com",
-        "scopes": [
-            "https://www.googleapis.com/auth/drive",
-            "https://www.googleapis.com/auth/plus.login"
-        ]
-    },*/
+    /* "oauth2": {
+         "client_id": "512069884644-jrmq4kajd3io9ef2vg6t8o532anl7r13.apps.googleusercontent.com",
+         "scopes": [
+             "https://www.googleapis.com/auth/drive",
+             "https://www.googleapis.com/auth/plus.login"
+         ]
+     },*/
     "app": {
         "background": {
-            "scripts": ["js/jquery-1.11.3.min.js", "js/utils.js", "js/background.js"]
+            "scripts": ["js/vendor/jquery-1.11.3.min.js", "js/custom/utils.js", "js/background.js"]
         }
     }
 }

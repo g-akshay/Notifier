@@ -17,6 +17,10 @@ body {
     overflow: visible;
 }
 
+#templates {
+    display: none;
+}
+
 #splashScreen {
     background-color: #042D3C;
     top: 0;
@@ -213,7 +217,7 @@ nav .nav-wrapper {
     vertical-align: middle;
 }
 
-.cards-con {
+#cards-con {
     margin: 5px auto;
 }
 
@@ -308,6 +312,7 @@ nav .nav-wrapper {
 
 .modal {
     max-height: 85%;
+    width: 56%;
 }
 
 .modal.modal-fixed-footer {

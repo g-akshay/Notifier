@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    /* SPLASH SCREEN */
+    /*setTimeout(function() {
+        $('#mainCon').show();
+        $('#splashScreen').fadeOut();
+    }, 1500);*/
+
+    $('#splashScreen').hide();
+
     $(".button-collapse").sideNav();
 
     $('.modal-trigger').leanModal({
@@ -45,29 +53,30 @@ $(document).ready(function() {
 
     $('select').material_select();
 
-    /*setTimeout(function() {
-        $('#mainCon').show();
-        $('#splashScreen').fadeOut();
-    }, 1500);*/
+    var $cardGrid = $('#cards-con').masonry({
+        itemSelector: '.card',
+        columnWidth: 100,
+        fitWidth: true,
+        gutter: 3,
+        originLeft: true,
+        resize: true,
+        transitionDuration: '0.2s',
+        containerStyle: {
+            position: 'relative'
+        }
+    });
 
-    $('#splashScreen').hide();
+    $("#templates").load("templates.html #card", function() {
+        var template = document.getElementById('card').innerHTML;
+        output = $(Mustache.render(template, { title: 'notification titel', message: 'message body', frequency: 'repeats daily' }));
+
+        $("#cards-con").append(output).masonry('appended', output);
+        //$("#cards-con").masonry(); // to reload layouting
+    });
 
 });
 
 $('body').on('click', '#firstNotifier, #addNotification', function() {
     // TODO: store the opened notification id somewhere
     $('#create').openModal();
-});
-
-var m = $('.cards-con').masonry({
-    itemSelector: '.card',
-    columnWidth: 100,
-    fitWidth: true,
-    gutter: 3,
-    originLeft: true,
-    resize: true,
-    transitionDuration: '0.2s',
-    containerStyle: {
-        position: 'relative'
-    }
 });
