@@ -244,6 +244,12 @@ nav .nav-wrapper {
     font-weight: 400;
 }
 
+.title:first-letter,
+.message:first-letter,
+.frequency:first-letter {
+    text-transform: uppercase;
+}
+
 .frequency {
     padding: 5px;
     font-size: 12px;
@@ -288,7 +294,7 @@ nav .nav-wrapper {
     font-size: 21px;
 }
 
-.action-buttons i:hover {
+.action-buttons .waves-light i:hover {
     opacity: 1 !important;
     cursor: pointer;
 }

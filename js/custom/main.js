@@ -1,12 +1,13 @@
 $(document).ready(function() {
     /* SPLASH SCREEN */
-    /*setTimeout(function() {
+    setTimeout(function() {
         $('#mainCon').show();
         $('#splashScreen').fadeOut();
-    }, 1500);*/
+    }, 1500);
 
-    $('#splashScreen').hide();
+    /*$('#splashScreen').hide();*/
 
+    // mneu collapse
     $(".button-collapse").sideNav();
 
     $('.modal-trigger').leanModal({
@@ -75,6 +76,8 @@ $(document).ready(function() {
     });
 
 });
+
+// EVENT BINDINGS
 
 $('body').on('click', '#firstNotifier, #addNotification', function() {
     // TODO: store the opened notification id somewhere

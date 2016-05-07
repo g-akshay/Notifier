@@ -37,3 +37,10 @@ frequency ->
 one time:  date-time 
 daily: times 
 more frequent: mins, hour, 4 hour 12 hour
+-> ADD weekly repeat
+
+FAB options
+-----------
+add
+mute all notifications
+view archived notifications

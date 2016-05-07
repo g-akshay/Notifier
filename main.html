@@ -42,7 +42,7 @@
             <a class="btn-floating btn-large waves-effect waves-light red" id="addNotification">
                 <i class="material-icons">add_alert</i>
             </a>
-            <!-- <ul>
+            <ul>
                 <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
                 <li>
                     <a class="btn-floating yellow darken-1">
@@ -50,7 +50,7 @@
                 </li>
                 <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
                 <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-            </ul> -->
+            </ul>
         </div>
         <div class="firstNotifier" id="firstNotifier">
             <a class="modal-trigger waves-effect waves-light">
@@ -58,7 +58,7 @@
             </a>
         </div>
         <div id="cards-con">
-            <div class="card">
+            <!-- <div class="card">
                 <h5 class="title">Notification title</h5>
                 <div class="message">Some text to show in notification body which will remind user to do things.
                 </div>
@@ -78,73 +78,73 @@
                     </a>
                 </div>
             </div>
+                    </div> -->
         </div>
-    </div>
-    <!-- All Modals -->
-    <div id="create" class="modal modal-fixed-footer">
-        <div class="modal-title">
-            <h6>Configure Notification</h6>
-        </div>
-        <div class="modal-content">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="Title" id="title" name="title" type="text" class="validate" length="40" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea placeholder="Description" id="description" name="description" class="materialize-textarea" length="250"></textarea>
-                    </div>
-                </div>
-                <p>
-                    <input class="with-gap" name="frequency" type="radio" id="veryFrequent" checked/>
-                    <label for="veryFrequent">Repeat after every </label>
-                    <div class="input-field col s6">
-                        <select>
-                            <option value="" disabled selected> </option>
-                            <option value="5">5 minutes</option>
-                            <option value="10">10 minutes</option>
-                            <option value="15">15 minutes</option>
-                            <option value="30">30 minutes</option>
-                            <option value="45">45 minutes</option>
-                            <option value="60">1 hour</option>
-                            <option value="120">2 hour</option>
-                            <option value="240">4 hour</option>
-                            <option value="360">6 hour</option>
-                            <option value="480">8 hour</option>
-                            <option value="600">10 hour</option>
-                            <option value="720">12 hour</option>
-                        </select>
-                    </div>
-                </p>
-                <p>
-                    <input class="with-gap" name="frequency" type="radio" id="daily" />
-                    <label for="daily">Repeat daily at</label>
-                    <div class="input-field col s12">
-                        <input class="timepicker" placeholder="Select Time" name="time" type="text" class="">
-                    </div>
-                </p>
-                <p>
-                    <input class="with-gap" name="frequency" type="radio" id="oneTime" />
-                    <label for="oneTime">One time</label>
+        <!-- All Modals -->
+        <div id="create" class="modal modal-fixed-footer">
+            <div class="modal-title">
+                <h6>Configure Notification</h6>
+            </div>
+            <div class="modal-content">
+                <form class="col s12">
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="Select Date" name="date" type="date" class="datepicker">
+                        <div class="input-field col s12">
+                            <input placeholder="Title" id="title" name="title" type="text" class="validate" length="40" />
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea placeholder="Description" id="description" name="description" class="materialize-textarea" length="250"></textarea>
+                        </div>
+                    </div>
+                    <p>
+                        <input class="with-gap" name="frequency" type="radio" id="veryFrequent" checked/>
+                        <label for="veryFrequent">Repeat after every </label>
                         <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected> </option>
+                                <option value="5">5 minutes</option>
+                                <option value="10">10 minutes</option>
+                                <option value="15">15 minutes</option>
+                                <option value="30">30 minutes</option>
+                                <option value="45">45 minutes</option>
+                                <option value="60">1 hour</option>
+                                <option value="120">2 hour</option>
+                                <option value="240">4 hour</option>
+                                <option value="360">6 hour</option>
+                                <option value="480">8 hour</option>
+                                <option value="600">10 hour</option>
+                                <option value="720">12 hour</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="frequency" type="radio" id="daily" />
+                        <label for="daily">Repeat daily at</label>
+                        <div class="input-field col s12">
                             <input class="timepicker" placeholder="Select Time" name="time" type="text" class="">
                         </div>
-                    </div>
-                </p>
-            </form>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="frequency" type="radio" id="oneTime" />
+                        <label for="oneTime">One time</label>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Select Date" name="date" type="date" class="datepicker">
+                            </div>
+                            <div class="input-field col s6">
+                                <input class="timepicker" placeholder="Select Time" name="time" type="text" class="">
+                            </div>
+                        </div>
+                    </p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat left">Discard</a>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat left">Discard</a>
-        </div>
-    </div>
-    <!-- <div id="disable" class="modal bottom-sheet">
+        <!-- <div id="disable" class="modal bottom-sheet">
         <div class="modal-content">
             <p>Stop notification</p>
         </div>
@@ -164,12 +164,12 @@
             </button>
         </div>
     </div> -->
-    <div id="templates"></div>
-    <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/vendor/mustache.min.js"></script>
-    <script type="text/javascript" src="js/vendor/materialize.js"></script>
-    <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/custom/main.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/vendor/mustache.min.js"></script>
+        <script type="text/javascript" src="js/vendor/materialize.js"></script>
+        <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/custom/main.js"></script>
+        <div id="templates"></div>
 </body>
 
 </html>
