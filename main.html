@@ -35,10 +35,14 @@
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="about.html">About</a></li>
                 </ul> -->
+                    <div class="offline tooltipped" data-position="left" data-delay="10" data-tooltip="Offline mode">
+                        <i class="material-icons">sync_disabled</i>
+                        <!-- <i class="material-icons">cloud_off</i> -->
+                    </div>
                 </div>
             </nav>
         </div>
-        <div class="fixed-action-btn main-fab">
+        <div class="fixed-action-btn options-fab">
             <a class="btn-floating btn-large waves-effect waves-light red" id="addNotification">
                 <i class="material-icons">add_alert</i>
             </a>
@@ -88,22 +92,42 @@
             <div class="modal-content">
                 <form class="col s12">
                     <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col s12 no-padding">
                             <input placeholder="Title" id="title" name="title" type="text" class="validate" length="40" />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-                            <textarea placeholder="Description" id="description" name="description" class="materialize-textarea" length="250"></textarea>
+                        <div class="input-field col s12 no-padding">
+                            <textarea placeholder="Description" id="description" name="description" class="materialize-textarea validate" length="250"></textarea>
                         </div>
                     </div>
-                    <p>
-                        <input class="with-gap" name="frequency" type="radio" id="veryFrequent" checked/>
-                        <label for="veryFrequent">Repeat after every </label>
-                        <div class="input-field col s6">
-                            <select>
-                                <option value="" disabled selected> </option>
-                                <option value="5">5 minutes</option>
+                    <div class="row">
+                        <p>
+                            <label>Repeat</label>
+                            <input class="with-gap" name="frequency" type="radio" id="minHour" value="minHour" checked/>
+                            <label for="minHour">Every</label>
+                            <input class="with-gap" name="frequency" type="radio" id="daily" value="daily" />
+                            <label for="daily">Daily</label>
+                            <input class="with-gap" name="frequency" type="radio" id="weekly" value="weekly" />
+                            <label for="weekly">Weekly</label>
+                            <input class="with-gap" name="frequency" type="radio" id="monthly" value="monthly" />
+                            <label for="monthly">Monthly</label>
+                            <input class="with-gap" name="frequency" type="radio" id="oneTime" value="oneTime" />
+                            <label for="oneTime">Once</label>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 no-padding frequency-selector" id="monthFrequency">
+                            <select name="monthFrequency">
+                                <option value="1" selected>Every 1 month</option>
+                                <option value="2">Every 3 months</option>
+                                <option value="3">Every 4 months</option>
+                                <option value="4">Every 6 months</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s12 no-padding frequency-selector" id="timeCombo">
+                            <select name="timeCombo">
+                                <option value="5" selected>5 minutes</option>
                                 <option value="10">10 minutes</option>
                                 <option value="15">15 minutes</option>
                                 <option value="30">30 minutes</option>
@@ -117,26 +141,59 @@
                                 <option value="720">12 hour</option>
                             </select>
                         </div>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="frequency" type="radio" id="daily" />
-                        <label for="daily">Repeat daily at</label>
-                        <div class="input-field col s12">
-                            <input class="timepicker" placeholder="Select Time" name="time" type="text" class="">
+                        <div class="input-field col s12 no-padding frequency-selector" id="date">
+                            <input placeholder="Select Date" name="date" type="date" class="datepicker">
                         </div>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="frequency" type="radio" id="oneTime" />
-                        <label for="oneTime">One time</label>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input placeholder="Select Date" name="date" type="date" class="datepicker">
-                            </div>
-                            <div class="input-field col s6">
-                                <input class="timepicker" placeholder="Select Time" name="time" type="text" class="">
-                            </div>
+                        <div class="input-field col s12 no-padding frequency-selector" id="weekDay">
+                            <select name="weekDay">
+                                <option value="1" selected>Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                                <option value="7">Sunday</option>
+                            </select>
                         </div>
-                    </p>
+                        <div class="input-field col s12 no-padding frequency-selector" id="days">
+                            <select name="days">
+                                <option value="1" selected>1st of every month</option>
+                                <option value="2">2nd of every month</option>
+                                <option value="3">3rd of every month</option>
+                                <option value="4">4th of every month</option>
+                                <option value="5">5th of every month</option>
+                                <option value="6">6th of every month</option>
+                                <option value="7">7th of every month</option>
+                                <option value="8">8th of every month</option>
+                                <option value="9">9th of every month</option>
+                                <option value="10">10th of every month</option>
+                                <option value="11">11th of every month</option>
+                                <option value="12">12th of every month</option>
+                                <option value="13">13th of every month</option>
+                                <option value="14">14th of every month</option>
+                                <option value="15">15th of every month</option>
+                                <option value="16">16th of every month</option>
+                                <option value="17">17th of every month</option>
+                                <option value="18">18th of every month</option>
+                                <option value="19">19th of every month</option>
+                                <option value="20">20th of every month</option>
+                                <option value="21">21th of every month</option>
+                                <option value="22">22th of every month</option>
+                                <option value="23">23th of every month</option>
+                                <option value="24">24th of every month</option>
+                                <option value="25">25th of every month</option>
+                                <option value="26">26th of every month</option>
+                                <option value="27">27th of every month</option>
+                                <option value="28">28th of every month</option>
+                                <option value="29">29th of every month</option>
+                                <option value="30">30th of every month</option>
+                                <option value="31">31th of every month</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s12 no-padding frequency-selector" id="time">
+                            <input class="timepicker" placeholder="Select time" name="time" type="text">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">

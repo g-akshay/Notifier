@@ -30,17 +30,66 @@ https://github.com/GoogleChrome/chrome-app-samples/tree/master/samples/identity
 --------
 form
 --------
+favicon
 title
 body
-
-frequency -> 
-one time:  date-time 
-daily: times 
-more frequent: mins, hour, 4 hour 12 hour
--> ADD weekly repeat
 
 FAB options
 -----------
 add
 mute all notifications
 view archived notifications
+about
+
+Library
+-------
+hammer js for touch gesture
+
+
+Repeat Frequency
+================
+
+one time 	   = > day, time                            => 2
+daily          = > time                                 => 1 
+weekly         = > week day, time                       => 2
+monthly        = > month frequency, day, time           => 3 
+every		   = > minutes - 5,10 ~ hours - 1,2,3		=> 1
+
+types -> min-hour, time, week-day, day, month freq., 
+...................................
+update -> repeat X number of times
+
+
+
+
+https://plus.google.com/+AddyOsmani/posts/9457wajmWvB
+
+
+Hi,
+
+I am writing to apply for the position of UI Developer. I have attached my resume for your review and believe that you will find that my qualifications meet all of your requirements. 
+
+Looking forward to hearing from you about scheduling an interview.
+
+Current Company: TCS
+Total Exp: 4y 2months
+Relevant Exp: 4y 2months
+Current ctc: 6.25
+Expected ctc: 10.0
+Notice period: 3months
+
+
+
+I am looking for a senior frontend developer role as I have 4yrs industry experience which will prove fit to fill the current requirement.
+
+
+
+
+
+
+
+
+
+
+
+

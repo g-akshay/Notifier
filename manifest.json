@@ -22,16 +22,14 @@
         "background",
         "notifications",
         "alarms",
-
-        //"syncFileSystem",
+        "syncFileSystem",
 
         //"identity",
         //"https://accounts.google.com/*",
         //"https://www.googleapis.com/*",
 
-        "storage",
-
-        "contextMenus"
+        //"storage"
+        //"contextMenus"
     ],
     /* "oauth2": {
          "client_id": "512069884644-jrmq4kajd3io9ef2vg6t8o532anl7r13.apps.googleusercontent.com",
@@ -42,7 +40,7 @@
      },*/
     "app": {
         "background": {
-            "scripts": ["js/vendor/jquery-1.11.3.min.js", "js/custom/utils.js", "js/background.js"]
+            "scripts": ["js/vendor/jquery-1.11.3.min.js", "js/background.js", "js/custom/utils.js"]
         }
     }
 }

@@ -3,7 +3,7 @@ var notifierFile;
 chrome.app.runtime.onLaunched.addListener(function() {
     chrome.app.window.create('main.html', {
             // 'id' serves two purposes: first, it prevents you from opening
-            // more than one instance of the app second it will cause the 
+            // more than one instance of the app, second it will cause the 
             // position/dimensions of the window to be restored when it's reopened.
             'id': 'Notifier',
             'outerBounds': {
